@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>animSprite</title>
+		<title>spriteWalker</title>
 		
-		<script src="animSprite.js"></script>
+		<script src="spriteWalker.js"></script>
 	</head>
 	<body>
 		
@@ -23,13 +23,13 @@
 			bgColor: "#000",
 		};
 		
-		var animEx = new animSprite(options);
+		var walker = new spriteWalker(options);
 		
 		
 		document.getElementById("spriteCanvas").addEventListener("click", function() {
-			if(!animEx.inAnimate)
+			if(!walker.inAnimate)
 			{
-				animEx.start();
+				walker.start();
 			}
 		});
 	</script>

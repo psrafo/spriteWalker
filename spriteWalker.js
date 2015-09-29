@@ -1,4 +1,4 @@
-var animSprite = function(options)
+var spriteWalker = function(options)
 {
 	var _this = this;
 	_this.canvas = null;
