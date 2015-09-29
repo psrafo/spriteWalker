@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>animSprite</title>
+		
+		<script src="animSprite.js"></script>
+	</head>
+	<body>
+		
+		<div id="spriteCanvas"></div>
+		
+	</body>
+	<script>
+		var options = {
+			container: "#spriteCanvas",
+			spriteUrl: "sprite.png",
+			width: 200,
+			height: 200,
+			cols: 10,
+			size: 56,
+			speed: 30,
+			bgColor: "#000",
+		};
+		
+		var animEx = new animSprite(options);
+		
+		
+		document.getElementById("spriteCanvas").addEventListener("click", function() {
+			if(!animEx.inAnimate)
+			{
+				animEx.start();
+			}
+		});
+	</script>
+</html>
